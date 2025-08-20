@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+nav {
+  background-color: black;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+#brand {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brandName {
+  font-size: 42px;
+  margin: 0;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 17px;
+}
+button {
+  padding: 10px 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+i {
+  color: white;
+  font-size: 21px;
+  margin-right: 20px;
+}

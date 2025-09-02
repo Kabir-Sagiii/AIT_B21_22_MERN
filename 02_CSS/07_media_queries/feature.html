@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        margin-top: 100px;
+      }
+      @media only screen and (width: 300px) {
+        div {
+          color: red;
+        }
+      }
+
+      @media only screen and (width: 500px) {
+        div {
+          background-color: black;
+          color: white;
+        }
+      }
+
+      @media only screen and (height: 500px) {
+        div {
+          background-color: red;
+          color: black;
+        }
+      }
+      @media only screen and (height: 300px) {
+        div {
+          background-color: white;
+          color: blue;
+        }
+      }
+
+      @media only screen and (width: 300px) and (height: 300px) {
+        div {
+          color: coral;
+          background-color: blue;
+        }
+      }
+
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        h1 {
+          color: green;
+        }
+        div {
+          margin: 30px;
+          background-color: black;
+          color: white;
+        }
+      }
+
+      @media only screen and (max-width: 299px) {
+        h1 {
+          color: black;
+        }
+        div {
+          margin: 30px;
+          background-color: green;
+          color: black;
+        }
+      }
+
+      @media only screen and (min-width: 501px) and (max-width: 800px) {
+        h1 {
+          color: red;
+        }
+        div {
+          margin: 30px;
+          background-color: red;
+          color: blue;
+        }
+      }
+
+      @media only screen and (min-width: 801px) and (orientation: landscape) {
+        h1 {
+          color: yellow;
+          background-color: black;
+        }
+        div {
+          margin: 30px;
+          background-color: white;
+          color: red;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Media queries</h1>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+      tenetur eos. Itaque quae impedit quidem cum explicabo, odio vitae
+      perspiciatis est atque quis, maiores cupiditate aliquam ea beatae quisquam
+      dolore. Asperiores quisquam animi numquam magnam voluptatem quaerat eaque,
+      reprehenderit ab enim doloribus quia rerum quis rem odit explicabo
+      quibusdam suscipit recusandae excepturi veniam consequuntur dolore error.
+      Atque possimus suscipit at magnam sit numquam beatae. Tempora earum
+      facilis ex iure quas assumenda a, suscipit quae doloribus exercitationem
+      architecto soluta unde enim nam eos dicta commodi. Pariatur dolorem
+      repudiandae blanditiis culpa dicta minus cumque consequuntur quasi
+      excepturi odio? Assumenda, porro maxime.
+    </div>
+  </body>
+</html>

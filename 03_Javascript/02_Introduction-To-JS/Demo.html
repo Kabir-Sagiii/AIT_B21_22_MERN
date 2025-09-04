@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1() {
+        document.querySelector("h1").style.color = "Red";
+        var img = document.createElement("img");
+        img.width = "300";
+        img.height = "300";
+        img.src =
+          "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d";
+
+        document.querySelector("body").appendChild(img);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Welcome to Javascript</h1>
+    <button onclick="f1()">Submit</button><br />
+  </body>
+</html>

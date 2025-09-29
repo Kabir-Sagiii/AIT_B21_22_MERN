@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getDomElement() {
+        //get h1 DOM Element
+        var h1_DomElement = document.querySelector("h1");
+        h1_DomElement.innerText = "Hello, Javascript";
+        h1_DomElement.style.backgroundColor = "black";
+        h1_DomElement.style.color = "white";
+        h1_DomElement.style.padding = "20px";
+
+        //get paragraph Dom Element
+        var p_DomElement = document.querySelector("p");
+        p_DomElement.innerText = `
+        The <p> element in HTML is used to define a paragraph of text. It's one of the most basic and commonly used elements in a webpage for displaying readable content.
+
+✅ Key Points:
+
+It stands for "paragraph."
+
+It automatically adds space (margin) before and after the text to separate it from other content.
+
+Browsers usually display each <p> block on a new line.
+
+You can use multiple <p> elements to structure your content clearly.
+        `;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to Document Object Model</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, vel!
+        Accusantium, ad pariatur. Eius repellat aperiam iste facere distinctio
+        culpa ducimus dolor porro perferendis. Est modi voluptatem vero!
+        Laborum, repellat. Dolorum, iusto sed quo quos laborum excepturi vero
+        distinctio dolor. Incidunt dolore nobis repudiandae provident, expedita
+        praesentium adipisci autem enim saepe harum quaerat. Numquam esse ullam
+        nesciunt iure mollitia modi. Placeat, deleniti ducimus consequatur
+        possimus quos eligendi deserunt laborum ipsam necessitatibus dolores
+        repellendus libero enim sapiente neque, quae consectetur facilis magnam
+        veniam! Commodi omnis reiciendis provident amet nemo, doloribus iusto
+        molestiae? Maxime autem saepe, libero sit et eius nihil deserunt quis
+        nostrum molestias debitis voluptatibus necessitatibus quasi nisi sunt,
+        harum nobis. Eveniet, molestiae! Consequuntur aliquam inventore
+        cupiditate eveniet reprehenderit fugiat dolor ipsum velit recusandae ad
+        repellendus quo libero aperiam, dolores sequi maiores dolorem minus nisi
+        cumque ullam doloribus laborum tempora. Beatae vero rerum repellat
+        corporis consectetur debitis excepturi tempore nesciunt!
+      </p>
+      <button onclick="getDomElement()">Submit</button>
+    </div>
+  </body>
+</html>

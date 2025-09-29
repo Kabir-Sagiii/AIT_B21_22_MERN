@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getDomElement() {
+        //get h1 DOM Element
+        var h1_DomElement = document.querySelector("h1");
+
+        h1_DomElement.innerText = "Hello, Javascript";
+
+        h1_DomElement.style.color = "blue";
+        var count = 0;
+        for (var key in h1_DomElement.style) {
+          console.log(key);
+          count++;
+        }
+
+        console.log(count);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to Document Object Model</h1>
+      <button onclick="getDomElement()">Submit</button>
+    </div>
+  </body>
+</html>

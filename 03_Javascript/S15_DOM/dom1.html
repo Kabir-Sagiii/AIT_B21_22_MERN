@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeColor(colorName) {
+        // var h1_DomElement = document.querySelector("#title");
+
+        var h1_DomElement = document.getElementById("title");
+        h1_DomElement.style.color = colorName;
+      }
+
+      function fnAssignSize(event) {
+        // alert(event.target.value);
+        var h1_DomElement = document.querySelector("#title");
+        h1_DomElement.style.fontSize = event.target.value + "px";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="title">Select the Color</h1>
+    <input type="radio" name="color" onchange="changeColor('red')" />
+    <label>Red</label>
+
+    <input type="radio" name="color" onchange="changeColor('blue')" />
+    <label>Blue</label>
+
+    <input type="radio" name="color" onchange="changeColor('green')" />
+    <label>Green</label> <br /><br />
+
+    <select onchange="fnAssignSize(event)">
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>40</option>
+      <option>50</option>
+    </select>
+  </body>
+</html>

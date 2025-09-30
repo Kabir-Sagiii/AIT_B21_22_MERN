@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeAttribute() {
+        var input_DOMElement = document.querySelector(".box");
+        input_DOMElement.placeholder = "Enter Password";
+        input_DOMElement.type = "password";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Change Attribute Value</h1>
+    <input type="text" placeholder="enter name" class="box" />
+    <button onclick="changeAttribute()">Change Attribute</button>
+  </body>
+</html>

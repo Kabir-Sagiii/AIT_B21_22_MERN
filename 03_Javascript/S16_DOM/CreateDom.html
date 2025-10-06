@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnCreatePara() {
+        var p_DomElement = document.createElement("p");
+        p_DomElement.innerText = "This Paragraph is created using JS Language";
+
+        var h3 = document.createElement("h3");
+        h3.innerText = "Heading Element";
+
+        var img = document.createElement("img");
+        img.src =
+          "https://images.techeblog.com/wp-content/uploads/2024/12/12202514/apple-iphone-17-pro-leak-new-design.jpg";
+        img.width = "200";
+        img.height = "200";
+
+        var div_DomElement = document.querySelector("div");
+
+        div_DomElement.appendChild(p_DomElement);
+        div_DomElement.appendChild(img);
+        div_DomElement.appendChild(h3);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Create DOM Element</h1>
+      <button onclick="fnCreatePara()">create</button>
+    </div>
+  </body>
+</html>

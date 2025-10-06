@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin-top: 50px;
+        text-align: center;
+      }
+      p {
+        color: Blue;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      function getInputData() {
+        var input_DomElement = document.querySelector("input");
+
+        var p_DomElement = document.querySelector("p");
+
+        var inputValue = input_DomElement.value;
+
+        p_DomElement.innerText = inputValue;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Task One</h1>
+    <input type="text" placeholder="type message..." />
+    <button onclick="getInputData()">Send</button>
+    <p>Input Data</p>
+  </body>
+</html>

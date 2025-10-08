@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnCreateList() {
+        // var inputDOM = document.getElementById("textbox");
+        // var value = inputDOM.value
+
+        var inputValue = document.getElementById("textbox").value;
+        var li = document.createElement("li");
+        li.innerText = inputValue;
+        li.style.marginTop = "20px";
+        var button = document.createElement("button");
+        button.innerText = "Remove";
+        button.style.marginLeft = "10px";
+        button.style.backgroundColor = "red";
+        button.style.color = "white";
+        button.style.border = "none";
+        button.style.padding = "10px 20px";
+
+        button.onclick = function () {
+          li.remove();
+        };
+
+        li.appendChild(button);
+
+        document.getElementById("list").appendChild(li);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Task on DOM</h1>
+    <input placeholder="Type Here...." id="textbox" />
+    <button onclick="fnCreateList()">Send</button>
+
+    <ol id="list"></ol>
+  </body>
+</html>

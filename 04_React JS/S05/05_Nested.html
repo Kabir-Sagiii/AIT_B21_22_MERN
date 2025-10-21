@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script type="text/babel">
+      var username = "Kabir ";
+
+      let containers = (
+        <div>
+          <h2 id="title" className="red">
+            {username}
+          </h2>
+          <p>
+            React JS is JS Library which seems to very easy with JSX Concpet
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(containers, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script>
+      const divContainer = React.createElement("div", null, [
+        React.createElement(
+          "section",
+          {
+            style: {
+              backgroundColor: "black",
+              color: "white",
+              padding: "20px",
+              margin: "20px",
+            },
+          },
+          [
+            React.createElement("h2", null, "HEading Element in section"),
+            React.createElement("p", null, "Paragraph Element"),
+          ]
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", {
+            src: "https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg",
+            width: "300",
+            height: "300",
+            alt: "User Image",
+          })
+        ),
+      ]);
+
+      ReactDOM.render(divContainer, document.getElementById("root"));
+    </script>
+  </body>
+</html>

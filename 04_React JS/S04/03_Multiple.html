@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script>
+      //h2,p,img
+
+      const h2 = React.createElement("h2", null, "React JS Library");
+
+      const p = React.createElement(
+        "p",
+        { id: "content", className: "user-content" },
+        "React JS is a Javascript Library"
+      );
+
+      const image = React.createElement("img", {
+        src: "https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg",
+        width: "300",
+        height: "300",
+        alt: "User Image",
+      });
+
+      ReactDOM.render(
+        [p, image, h2, image, p],
+        document.getElementById("container")
+      );
+    </script>
+  </body>
+</html>

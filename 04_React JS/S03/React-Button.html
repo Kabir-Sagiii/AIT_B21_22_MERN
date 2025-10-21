@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button using React JS</title>
+    <!-- Integrating React Library with html file-->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- Integrating ReactDOM Library with html file-->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <script>
+      //React JS Code
+
+      const button_React_Element = React.createElement(
+        "button",
+        {},
+        "React Button"
+      );
+
+      ReactDOM.render(button_React_Element, document.querySelector("body"));
+    </script>
+  </body>
+</html>

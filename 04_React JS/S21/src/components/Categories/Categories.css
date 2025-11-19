@@ -1,0 +1,8 @@
+.categories {
+  text-align: center;
+}
+.categories img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+}
